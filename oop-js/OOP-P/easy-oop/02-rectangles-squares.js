@@ -1,5 +1,13 @@
 /*Given the class from the previous problem:
 
+
+Write a class called Square that inherits from Rectangle, and is used like this:
+
+let square = new Square(5);
+
+*/
+
+
 class Rectangle {
   constructor(width, length) {
     this.width = width;
@@ -19,8 +27,13 @@ class Rectangle {
   }
 }
 
-Write a class called Square that inherits from Rectangle, and is used like this:
+class Square extends Rectangle{
+	constructor(width){
+		super(width,width)
+	}	
+}
 
-let square = new Square(5);
+
+let square = new Square(5)
 console.log(`area of square = ${square.getArea()}`); // area of square = 25 
-*/
+
