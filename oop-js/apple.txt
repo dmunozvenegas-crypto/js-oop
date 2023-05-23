@@ -1,0 +1,29 @@
+class Fruits{
+
+	constructor(name, color, taste) {
+		this.arr = [name,color,taste]
+	}
+	arr = [this.name,this.color,this.taste]
+	toString() {
+		return arr.join(", ")
+	}
+}
+
+class Apple extends Fruits{
+	constructor(name,color,taste,size) {
+		super(name,color,taste);
+		this.size = size;
+	}
+
+}
+
+
+const fuijiApple = new Apple("Fuiji Apple","Bright red", "Sweet", "4 inches");
+
+console.log("Logging my First fruit");
+
+console.log(Apple.toString())
+
+
+
+
