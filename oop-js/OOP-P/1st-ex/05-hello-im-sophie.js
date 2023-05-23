@@ -1,0 +1,19 @@
+/*Using the code from the previous exercise, add a parameter to constructor that provides a name for the Cat object. Assign this parameter to a property called name and use it to log a greeting with the provided name. (You can remove the code that displays I'm a cat!.)
+ *class Cat {
+  constructor() {
+  }
+}
+
+let kitty = new Cat('Sophie'); */
+class Cat{
+	constructor(name){
+		this.name = name;
+		console.log(`I am ${this.name}`)
+	}
+}
+let sophie = new Cat("Sophie")
+
+
+
+
+
