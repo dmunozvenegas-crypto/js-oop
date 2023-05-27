@@ -38,3 +38,23 @@ a fish named Chester
 
 P Hanson has 3 adopted pets.
 B Holmes has 4 adopted pets. */
+
+class Pet {
+	constructor(animal,name){
+		this.animal = animal;
+		this.name = name;
+	}
+}
+
+class Owner {
+	constructor(name){
+		this.name = name;
+	}
+
+}
+
+class Shelter {
+	adopt(Owner,Pet) {
+		console.log()
+
+}
