@@ -38,63 +38,41 @@ a fish named Chester
 
 P Hanson has 3 adopted pets.
 B Holmes has 4 adopted pets. */
-
-// ***** THIS BELONGS TO THE SHELTER CLASS******************************
 // The following things need to be done to this class first we need to add some code that keeps track of all the pets that each owner object had
-// this class will do most of the heavy lift for what needs to be done
-// for example this class will take care of creating an empty object this empty object will store the keys that we are recieving from the object that is being passed to 
-// it first we will get the properties from the object 
-
 class Pet {
 	constructor(animal,name){
 		this.animal = animal;
 		this.name = name;
 	}
-	info(){
-		this.petInfo = [this.animale, this.name]
-		return this.petInfo
-	}
-	getAnimal(){
-		return this.animal;
-	}
-	getName() {
-		return this.name;
-	}
-	setAnimal(newType) {
-		this.animal = newType;
-	}
-	setName(newName){
-		this.name = newName;
-	}
 }
+
+
 class Owner {
 	constructor(name){
 		this.name = name;
 		this.adopt = 0;
 	}
-	numberOfPets(){
-		return this.adopt;
-	}
+
 }
+
+
+// this class will do most of the heavy lift for what needs to be done
+// for example this class will take care of creating an empty object this empty object will store the keys that we are recieving from the object that is being passed to 
+// it first we will get the properties from the object 
+
 class Shelter {
 	constructor(){
 		this.carrierObj = {}; 
 	}
 	adopt(owner,pet) {
-		this.owner = owner;
-		this.pet = pet;
-		console.log(this.owner.name + " " +  this.pet.name)
-		
-		if(!this.carrierObj[this.owner.name]) this.carrierObj[this.owner.name] =[];
-		console.log("The following are the keys inside this object")
-		this.carrierObj[this.owner.name].push(this.pet.name)
-		console.log(Object.keys(this.carrierObj))
-		console.log(this.carrierObj)
-		this.owner.adopt +=1;
-	}
-	printAdoptions(){
+		console.log(first.this.animal + second.this.name)
+		if(!this.carrirer[owner.this.name]) carrier.this.name =[];
+		this.owner.name.push(pet.this.name)
+		this.adopt += 1;
+
 		
 	}
+
 }
 let butterscotch = new Pet('cat', 'Butterscotch');
 let pudding      = new Pet('cat', 'Pudding');
@@ -103,8 +81,10 @@ let kennedy      = new Pet('dog', 'Kennedy');
 let sweetie      = new Pet('parakeet', 'Sweetie Pie');
 let molly        = new Pet('dog', 'Molly');
 let chester      = new Pet('fish', 'Chester');
+
 let phanson = new Owner('P Hanson');
 let bholmes = new Owner('B Holmes');
+
 let shelter = new Shelter();
 shelter.adopt(phanson, butterscotch);
 shelter.adopt(phanson, pudding);
