@@ -83,17 +83,19 @@ class Shelter {
 	adopt(owner,pet) {
 		this.owner = owner;
 		this.pet = pet;
-		console.log(this.owner.name + " " +  this.pet.name)
-		
 		if(!this.carrierObj[this.owner.name]) this.carrierObj[this.owner.name] =[];
-		console.log("The following are the keys inside this object")
 		this.carrierObj[this.owner.name].push(this.pet.name)
-		console.log(Object.keys(this.carrierObj))
-		console.log(this.carrierObj)
 		this.owner.adopt +=1;
 	}
 	printAdoptions(){
-		
+		// need to make a for loop that iterates over the keys once iterated over the keys 
+		// then we need to run a second forloop on the array of objects so we can be able to access each individual element in the array and be able to print them out 
+		for(const x in this.carrierObj){
+			console.log("This is the property of x which we will iterate over with a forloop " + x)
+			for(let z =0; z < this.carrierObj[x].length; z++){
+				console.log(this.carrierObj[x][z])
+			}
+						}		
 	}
 }
 let butterscotch = new Pet('cat', 'Butterscotch');
