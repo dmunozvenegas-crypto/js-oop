@@ -6,3 +6,8 @@
 
 console.log(person.fullName);
 */
+
+
+
+/*
+ The CUBE Customer Support Specialist has practical experience working in a customer-facing Service Desk or support role. You will work in a team handling application, operational and technical enquiries by email and telephone from CUBE customers. You will work with appropriate resources throughout the company to drive cases to resolution and meet customer SLAs. */

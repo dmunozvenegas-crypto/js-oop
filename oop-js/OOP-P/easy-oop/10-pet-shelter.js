@@ -37,7 +37,10 @@ a dog named Kennedy
 a fish named Chester
 
 P Hanson has 3 adopted pets.
-B Holmes has 4 adopted pets. */
+B Holmes has 4 adopted pets. 
+		// need to make a for loop that iterates over the keys once iterated over the keys 
+		// then we need to run a second forloop on the array of objects so we can be able to access each individual element in the array and be able to print them out 
+		*/
 
 // ***** THIS BELONGS TO THE SHELTER CLASS******************************
 // The following things need to be done to this class first we need to add some code that keeps track of all the pets that each owner object had
@@ -85,15 +88,18 @@ class Shelter {
 		this.pet = pet;
 		if(!this.carrierObj[this.owner.name]) this.carrierObj[this.owner.name] =[];
 		this.carrierObj[this.owner.name].push(this.pet.name)
+		console.log(this.carrierObj)
 		this.owner.adopt +=1;
 	}
 	printAdoptions(){
-		// need to make a for loop that iterates over the keys once iterated over the keys 
-		// then we need to run a second forloop on the array of objects so we can be able to access each individual element in the array and be able to print them out 
 		for(const x in this.carrierObj){
-			console.log("This is the property of x which we will iterate over with a forloop " + x)
+			console.log(x + " has adopted the following pets:")
 			for(let z =0; z < this.carrierObj[x].length; z++){
-				console.log(this.carrierObj[x][z])
+
+
+				console.log("a " + this.owner.animal + " " + " named " + this.carrierObj[x][z])
+				
+
 			}
 						}		
 	}
